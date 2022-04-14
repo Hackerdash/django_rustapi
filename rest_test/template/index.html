@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task</title>
+</head>
+<body style="margin: auto;width: 50%;height:100%%;padding-top: 6%;">
+    <div style="background: linear-gradient(to top left, #33ccff 0%, #ff99cc 100%) no-repeat; height:200px">
+        <div style="margin: auto;width: 50%;padding: 65px;;">
+            <div >
+                <a href='/get' style="font-family: Verdana, Arial, Helvetica, sans-serif;">GET</a>
+            </div>
+            <form action='postdata' method='post'>
+                {% csrf_token %}
+                <span>
+                task
+            </span>
+            <input type="text" name='task' maxlength="200"> <br>
+            <button style="background= ">submit</button>
+            <form>
+        </div>
+    </div>
+</body>
+</html>
